@@ -14,3 +14,10 @@
 | `tkss`     | tmux kill-session -t       | Terminate named running tmux session                     |
 | `tmux`     | `_zsh_tmux_plugin_run`     | Start a new tmux session                                 |
 | `tmuxconf` | `$EDITOR $ZSH_TMUX_CONFIG` | Open .tmux.conf file with an editor                      |
+
+## extract
+该插件定义了一个名为 的函数，extract该函数提取您传递给它的存档文件，并且它支持多种存档文件类型。这样您就不必知道提取文件的具体命令，您只需要知道，
+```
+  extract <filename>
+```
+该函数就会处理其余的事情。
