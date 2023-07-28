@@ -3,6 +3,7 @@
 ## git
 
 ####[Aliases ](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git#aliases)
+常用命令
 ga	git add
 gaa	git add --all
 
@@ -29,3 +30,26 @@ gaa	git add --all
   extract <filename>
 ```
 该函数就会处理其余的事情。
+
+
+## themes
+
+This plugin allows you to change ZSH theme on the go.
+
+To use it, add themes to the plugins array in your zshrc file:
+
+plugins=(... themes)
+
+Usage
+
+theme <theme_name> - Changes the ZSH theme to specified theme.
+
+theme - Changes the ZSH theme to some random theme.
+
+lstheme - Lists installed ZSH themes.
+
+## zsh-syntax-highlighting 
+提供高亮
+
+## zsh-autosuggestions
+Cmd 命令提示
