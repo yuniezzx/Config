@@ -20,7 +20,7 @@ ZSH_THEME="Ducula/ducula"
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # zsh-syntax-highlighting must at the end of plugins
-plugins=(git git-prompt themes zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(extract git git-prompt themes zsh-autosuggestions zsh-syntax-highlighting)
 
 
 source $ZSH/oh-my-zsh.sh
