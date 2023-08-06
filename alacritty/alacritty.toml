@@ -93,7 +93,7 @@ hide_when_typing = true
 [[keyboard.bindings]]
 action = "Quit"
 key    = "Q"
-mods   = "Control"
+mods   = "Control|Shift"
 
 [[keyboard.bindings]]
 action = "ToggleFullscreen"

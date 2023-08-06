@@ -11,45 +11,31 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-
 # themes list-> Ducula/ducula, headline/headline, powerlevel10k/powerlevel10k
-ZSH_THEME="Ducula/ducula"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
-
-# zsh-completions
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-# zsh-syntax-highlighting must at the end of plugins
 plugins=(extract git git-prompt themes zsh-autosuggestions zsh-syntax-highlighting)
-
 
 source $ZSH/oh-my-zsh.sh
 
 
-#####==================######
-# User configuration
-#####==================######
-
-# pyenv config
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv virtualenv-init -)"
-
-
-
-
-
-
-
-
-
-
-#####==================######
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias typora="open -a typora"
+
+
+# User configuration
+
+# add environment variable /home/username/.local/bin 
+export PATH="$HOME/.local/bin:$PATH"
+
+# node version package manager config
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
